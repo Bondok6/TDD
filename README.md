@@ -56,8 +56,8 @@ Use **[WSL](https://docs.microsoft.com/en-us/windows/wsl/about)**
 Once you have installed **ruby** you need to clone this project's repository, use this command in your terminal:
 
 ```
-git clone https://github.com/Yothu/oop-school-library.git
-cd /oop-school-library
+git clone git@github.com:Bondok6/TDD.git
+cd TDD
 ```
 
 ### Usage
@@ -65,7 +65,7 @@ cd /oop-school-library
 To use run the decode method use this command:
 
 ```
-ruby ./solver.rb
+ruby solver.rb
 ```
 
 ### To Run Test
