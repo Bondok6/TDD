@@ -17,6 +17,3 @@ class Solver
     num.to_s
   end
 end
-
-f = Solver.new
-puts f.fizzbuzz(15)
