@@ -1,23 +1,22 @@
 class Solver
-  def factorial(n)
-    raise Exception, 'Invalid number' if n.negative?
-    (2..n).reduce(1,:*)
+  def factorial(num)
+    raise Exception, 'Invalid number' if num.negative?
+
+    (2..num).reduce(1, :*)
   end
 
   def reverse(word)
     word.reverse
   end
 
-  def fizzbuzz(n)
-    if n % 3 == 0 && n % 5 == 0
-      return "fizzbuzz"
-    elsif n % 5 == 0
-      return "buzz"
-    elsif n % 3 == 0
-      return "fizz"
-    else
-      return n.to_s
-    end
-  end
+  def fizzbuzz(num)
+    return 'fizzbuzz' if (num % 3).zero? && (num % 5).zero?
+    return 'buzz' if (num % 5).zero?
+    return 'fizz' if (num % 3).zero?
 
+    num.to_s
+  end
 end
+
+f = Solver.new
+puts f.fizzbuzz(15)
